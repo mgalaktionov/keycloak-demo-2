@@ -1,0 +1,12 @@
+{
+  "authenticators": [],
+  "policies": [
+    {
+      "name": "Pretty fancy policy",
+      "fileName": "fancy-policy.js",
+      "description": "Gives access only to pretty fancy users."
+    }
+  ],
+  "mappers": [],
+  "saml-mappers": []
+}

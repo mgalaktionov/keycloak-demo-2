@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.0.2'
+    id 'io.spring.dependency-management' version '1.1.0'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web'//, version: '2.7.8'
+
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-oauth2-resource-server
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-oauth2-resource-server'//, version: '2.7.8'
+
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter'//, version: '2.7.8'
+
+    implementation group: 'org.springframework.security', name: 'spring-security-oauth2-jose'//, version: '6.0.0'
+
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-security'//, version: '2.7.8'
+
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-configuration-processor
+    implementation group: 'org.springframework.boot', name: 'spring-boot-configuration-processor'//, version: '2.7.8'
+
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
